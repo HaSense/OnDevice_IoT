@@ -15,3 +15,15 @@
 - vs 도커 확장팩
     - docker
     - Dev Container
+
+실습 2일차
+
+
+- 도커파일 사용 (Dockerfile)
+- FROM ubuntu:18.04
+  RUN apt-get update                  //리눅스에 기본적인 설치 실행
+  RUN apt-get install -y apache2     // -y로 모든 옵션에 Yes로 실행.
+- 빌드 방법
+  - docker build --tag mylinux[이미지이름] .
+  - docker run -d -it -p 8083:80 --name cstudy007 mylinux /bin/bash
+  - 

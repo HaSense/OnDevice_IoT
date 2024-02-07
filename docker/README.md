@@ -25,6 +25,8 @@
     - docker run —name cstudy003 -p 8082:80 gcc   (이렇게 실행하면 Exit가 되어버린다. 수정해야 한다.)
 - Up이 안되고 Exit로 되어 있는 문제 해결하기
     - docker run —name cstudy003 -p 8082:80 -it gcc /bin/bash
+    - docker attach cstudy003
+    - docker exec -it cstudy003 /bin/bash
 
 - 도커파일 사용 (Dockerfile)
 - FROM ubuntu:18.04

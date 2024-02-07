@@ -18,6 +18,13 @@
 
 실습 2일차
 
+- gcc가 들어있는 공식 이미지를 받기
+    - docker hub에서 gcc 이미지를 pull 한다.
+    - docker pull gcc
+- gcc가 있는 공식 이미지를 이용해 cstudy003을 실행하기
+    - docker run —name cstudy003 -p 8082:80 gcc   (이렇게 실행하면 Exit가 되어버린다. 수정해야 한다.)
+- Up이 안되고 Exit로 되어 있는 문제 해결하기
+    - docker run —name cstudy003 -p 8082:80 -it gcc
 
 - 도커파일 사용 (Dockerfile)
 - FROM ubuntu:18.04

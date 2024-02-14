@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-void increase() {
+int increase() {
     int x = 10;
     x += 1;
     printf("increase 내 x: %d\n", x);
+
+    return -1;
 }
 
 int main() {

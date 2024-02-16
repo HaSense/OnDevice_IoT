@@ -4,9 +4,9 @@ int executeSum(int kor, int eng, int math)
 {
    return kor + eng + math;
 }
-double executeAvg(int _total)
+double executeAvg(int total)
 {
-    return (double)_total / 3.0;
+    return (double)total / 3.0;
 }
 int main()
 {

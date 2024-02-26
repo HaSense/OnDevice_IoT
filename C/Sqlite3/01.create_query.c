@@ -17,6 +17,10 @@ int main() {
         fprintf(stdout, "데이터베이스 성공적으로 열림\n");
     }
 
+    //테이블이 있으면 기존 테이블 삭제 
+    //sql = "DROP TABLE IF EXISTS STUDENT;";
+    //sqlite3_exec(db, sql, 0, 0, &errMsg);
+    
     // 테이블 생성 SQL
     sql = "CREATE TABLE IF NOT EXISTS STUDENT("
           "ID INT PRIMARY KEY NOT NULL,"

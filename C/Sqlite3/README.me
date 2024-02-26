@@ -10,3 +10,9 @@ add_executable(create_sqlite main.c)
 # SQLite3 라이브러리 링크
 target_link_libraries(create_sqlite sqlite3)
 '''
+
+우분투에서 sqlite3 프로그램을 하려면
+sudo apt install sqlite3 libsqlite3-dev
+
+기본 컴파일
+gcc -o run create_logic.c -lsqlite3

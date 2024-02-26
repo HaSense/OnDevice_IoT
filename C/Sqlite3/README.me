@@ -1,0 +1,12 @@
+CMake 라이브러리에 sqlite3를 삽입해서 컴파일 하려면.
+
+'''
+cmake_minimum_required(VERSION 3.27)
+project(create_sqlite C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(create_sqlite main.c)
+# SQLite3 라이브러리 링크
+target_link_libraries(create_sqlite sqlite3)
+'''

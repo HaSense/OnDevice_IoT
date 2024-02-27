@@ -1,3 +1,16 @@
+/*
+  온전하게 개발 Lib를 이용하여 음악파일을 실행시켰다.
+  그런데 동작이 이상하다. 노래가 끝날 때 까지 메뉴가 동작하지 않는다. 
+  이제 점유형, 비점유형 스레드 개념을 도입해야 할때다.
+
+  일단, 현재 버그를 확인하고 필요한 라이브러리를 설치 및 CLion을 사용하고 있다면 CMake 설정을 알아보자.
+  
+  $> sudo apt install libmpg123-dev libao-dev
+
+  CMakeLists.txt
+  target_link_libraries([프로그램이름] mpg123 ao)
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpg123.h>

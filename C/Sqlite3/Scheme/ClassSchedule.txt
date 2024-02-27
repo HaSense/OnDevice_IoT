@@ -1,5 +1,5 @@
 CREATE TABLE ClassSchedule (
-	ClassID	INTEGER,
+	ClassID	INTEGER PRIMARY key AUTOINCREMENT,
 	ClassName   VARCHAR(50),
 	Instructor     VARCHAR(50),
 	Room	    INTEGER,

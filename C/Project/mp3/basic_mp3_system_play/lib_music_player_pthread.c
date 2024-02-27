@@ -1,3 +1,12 @@
+/*
+    pthread를 사용하여 정상 동작하게 만들었다.
+    pthread 설치
+    $> sudo apt-get install libpthread-stubs0-dev
+
+    CMakeLists.txt
+    target_link_libraries([프로그램 이름] mpg123 ao pthread)
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <mpg123.h>

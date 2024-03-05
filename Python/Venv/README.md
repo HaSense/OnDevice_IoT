@@ -1,6 +1,7 @@
 ## VENV 사용예제
 
 ### 예제 1: 기본 가상 환경 설정 및 활성화
+"""
 가상 환경 생성
 
 프로젝트 디렉토리를 생성하고, 해당 디렉토리 내에서 가상 환경을 생성합니다.
@@ -21,6 +22,7 @@ bash
 Copy code
 source myEnv/bin/activate
 간단한 패키지 설치 및 실행
+
 
 가상 환경이 활성화된 상태에서 requests 패키지를 설치해봅니다.
 bash
@@ -47,6 +49,7 @@ bash
 Copy code
 deactivate
 
+"""
 
 ### 예제 2: Flask 웹 애플리케이션
 가상 환경 설정 및 활성화

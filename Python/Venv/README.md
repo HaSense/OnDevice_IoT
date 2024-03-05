@@ -1,46 +1,48 @@
 ## VENV 사용예제
 
 ### 예제 1: 기본 가상 환경 설정 및 활성화
-"""
-가상 환경 생성
 
-프로젝트 디렉토리를 생성하고, 해당 디렉토리 내에서 가상 환경을 생성합니다.
-bash
-Copy code
-mkdir prj1
-cd prj1
-python3 -m venv myEnv
-가상 환경 활성화
+가상 환경 생성<br/>
 
-생성된 가상 환경을 활성화합니다. 활성화 후에는 이 환경 내에서 Python 및 pip 명령어가 가상 환경을 가리키게 됩니다.
-Windows:
-bash
-Copy code
-.\my_venv\Scripts\activate
-macOS/Linux:
-bash
-Copy code
-source myEnv/bin/activate
-간단한 패키지 설치 및 실행
+프로젝트 디렉토리를 생성하고, 해당 디렉토리 내에서 가상 환경을 생성합니다.<br/>
+bash<br/>
+Copy code<br/>
+mkdir prj1<br/>
+cd prj1<br/>
+python3 -m venv myEnv<br/>
+가상 환경 활성화<br/>
 
+생성된 가상 환경을 활성화합니다. 활성화 후에는 이 환경 내에서 Python 및 pip 명령어가 가상 환경을 가리키게 됩니다.<br/>
+Windows:<br/>
+bash<br/>
+Copy code<br/>
+.\my_venv\Scripts\activate<br/>
+macOS/Linux:<br/>
+bash<br/>
+Copy code<br/>
+source myEnv/bin/activate<br/>
+간단한 패키지 설치 및 실행<br/>
+<br/>
 
-가상 환경이 활성화된 상태에서 requests 패키지를 설치해봅니다.
-bash
-Copy code
-pip install requests
-Python 스크립트를 생성하여 requests를 사용해 간단한 HTTP 요청을 보내봅니다.
-python
-Copy code
+가상 환경이 활성화된 상태에서 requests 패키지를 설치해봅니다.<br/>
+bash<br/>
+Copy code<br/>
+pip install requests<br/>
+Python 스크립트를 생성하여 requests를 사용해 간단한 HTTP 요청을 보내봅니다.<br/>
+python<br/>
+Copy code<br/>
+
 # save this as test_requests.py
 import requests
 
 response = requests.get('https://api.github.com')
 print(response.status_code)
-스크립트 실행
 
-다음 명령어를 통해 스크립트를 실행합니다.
-bash
-Copy code
+<br/>스크립트 실행<br/>
+
+다음 명령어를 통해 스크립트를 실행합니다.<br/>
+bash<br/>
+Copy code<br/>
 python test_requests.py
 가상 환경 비활성화
 

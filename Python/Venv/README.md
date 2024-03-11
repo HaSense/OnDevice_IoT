@@ -11,10 +11,6 @@ python3 -m venv myEnv<br/>
 가상 환경 활성화<br/>
 
 생성된 가상 환경을 활성화합니다. 활성화 후에는 이 환경 내에서 Python 및 pip 명령어가 가상 환경을 가리키게 됩니다.<br/>
-Windows:<br/>
-bash<br/>
-
-.\my_venv\Scripts\activate<br/>
 macOS/Linux:<br/>
 source myEnv/bin/activate<br/>
 간단한 패키지 설치 및 실행<br/>

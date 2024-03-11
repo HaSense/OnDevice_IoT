@@ -51,3 +51,11 @@ python -m pip install --upgrade pip
 ### pip 버전 확인 방법
 pip --version
 
+### virtualenv 설치법
+python3 -m pip install --user -U virtualenv
+### virtualenv 가상환경 만드는 방법
+virtualenv env
+### virtualenv 가상화 동작
+source env/bin/activate
+### virtualenv 가상화 멈춤
+deactivate

@@ -5,8 +5,6 @@
 가상 환경 생성<br/>
 
 프로젝트 디렉토리를 생성하고, 해당 디렉토리 내에서 가상 환경을 생성합니다.<br/>
-bash<br/>
-Copy code<br/>
 mkdir prj1<br/>
 cd prj1<br/>
 python3 -m venv myEnv<br/>
@@ -15,11 +13,9 @@ python3 -m venv myEnv<br/>
 생성된 가상 환경을 활성화합니다. 활성화 후에는 이 환경 내에서 Python 및 pip 명령어가 가상 환경을 가리키게 됩니다.<br/>
 Windows:<br/>
 bash<br/>
-Copy code<br/>
+
 .\my_venv\Scripts\activate<br/>
 macOS/Linux:<br/>
-bash<br/>
-Copy code<br/>
 source myEnv/bin/activate<br/>
 간단한 패키지 설치 및 실행<br/>
 <br/>
@@ -41,13 +37,17 @@ print(response.status_code)<br/>
 <br/>스크립트 실행<br/>
 
 다음 명령어를 통해 스크립트를 실행합니다.<br/>
-bash<br/>
-Copy code<br/>
 python test_requests.py<br/>
 가상 환경 비활성화<br/>
 
 작업이 끝나면, 다음 명령어로 가상 환경을 비활성화합니다.<br/>
-bash<br/>
-Copy code<br/>
 deactivate<br/>
+
+-------------------------------------
+### pip 설치법
+sudo apt-get install python3-pip
+### pip 업그레이드 방법
+python -m pip install --upgrade pip
+### pip 버전 확인 방법
+pip --version
 

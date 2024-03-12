@@ -16,3 +16,21 @@ class BankAccount:
 
     def get_balance(self):
         print(f"현재 잔액은 {self.balance}원입니다.")
+
+# 메인 코드
+if __name__ == "__main__":
+    # 계좌 생성
+    account = BankAccount("홍길동", 10000)
+    print(f"{account.owner}님의 계좌가 생성되었습니다. 초기 잔액은 {account.balance}원입니다.")
+
+    # 입금 테스트
+    account.deposit(5000)
+    account.get_balance()
+
+    # 출금 테스트
+    account.withdraw(3000)
+    account.get_balance()
+
+    # 출금 시도 (잔액 부족)
+    account.withdraw(15000)
+    account.get_balance()
